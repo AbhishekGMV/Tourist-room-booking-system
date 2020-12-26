@@ -75,7 +75,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                         <button class="btn btn-submit" type="submit">Submit</button>
                         <button class="btn btn-reset" type="reset">Reset</button> <br>
                     </div>
-                    <p>Already have an account? <a href="login.php">Login here</a> </p>
+                    <p>Already have an account? <a href="index.php">Login here</a> </p>
                 </div>
             </form>
         </div>
