@@ -9,7 +9,8 @@
 
     <style>
         th {
-            background-color: #149b90;
+            background-color: #337ab7;
+            color: white;
         }
         table, th, td {
             border: 2px solid black;
@@ -35,7 +36,7 @@
         <form action="" method="post">
             <input type="email" class="form-control" name="email" placeholder="Your email" required></input><br>
             <input type="submit" class="btn btn-info btn-sm" value="View" name="view">
-            <input type="reset" class="btn btn-danger btn-sm" value="Reset" name="reset"> <br> <br>
+            <input type="reset" class="btn btn-danger btn-sm" value="Reset" name="reset"> <br><br>
         </form>
     </div>
 
@@ -72,9 +73,9 @@
                 print"</tr>";
             }
             print"</table>";
-            print "<h3 style='text-align: center'>Total: RS. $total_cost</h3>
+            print "<h3 style='text-align: center;'>Total: ₹. $total_cost</h3><br><br>
             <form id='cancellation-form' style='text-align: center' method='POST' class='container'>
-                <div class='jumbotron' style= 'background-color: #bdabab'>
+                <div class='jumbotron' style='background-color: #f76a5c'>
                 <h3>Booking cancellation</h3>
                 <input type='email' name='email' class='form-control' placeholder='Email ID' ></input><br>
                 <input type='text' name='bid' class='form-control' placeholder='Booking ID' ></input><br>

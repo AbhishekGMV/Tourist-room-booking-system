@@ -150,16 +150,6 @@
 <?php
     require_once "config.php";
 
-    $email = "";
-    $phone = ""; 
-    $room_type = "";
-    $bed = "";
-    $num_rooms = "";
-    $meal = "";
-    $total_cost  = 0;
-    $cin = "";
-    $cout = "";
-
     if($_SERVER["REQUEST_METHOD"] == "POST"){
     $email = $_POST["email"];
     $phone = $_POST["phone"]; 
@@ -189,7 +179,9 @@
         $sql = "INSERT INTO bookings (email,phone,room_type,bed_type,num_rooms,meals,check_in,check_out,bill_total) 
                 VALUES ('$email','$phone','$room_type','$bed','$num_rooms','$meal','$cin','$cout','$total_cost')";
         if(mysqli_query($conn, $sql)){
-            echo "<script>alert('Booking successful!')</script>";
+            echo "<script>alert('Booking successful!')
+                    window.location.href = 'manage-booking.php'
+                </script>";
         } else {
             echo "<script>alert('Could not confirm booking')</script>";
             echo mysqli_error($conn);
@@ -197,20 +189,6 @@
         mysqli_close($conn);
     }
 }
-
-// $res = mysqli_query($conn,"SELECT * FROM users WHERE email='abhi@gmail.com'");
-// 	print "<table border=1><tr><th>NAME</th><th>USN</th><th>CGPA</th></tr>";
-// foreach($res as $s)
-// {
-// 	print"<tr>";
-// 	foreach($s as $k=>$v)
-// 	{
-
-// 		print "<td>".$v."</td>";
-// 	}
-// 	print"</tr>";
-// }
-// print"</table>";
 ?>
 
 
