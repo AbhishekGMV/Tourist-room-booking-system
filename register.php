@@ -17,14 +17,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
     if(mysqli_num_rows($result)){
         echo "<script>alert('User email already exists')
-        window.location.href = 'login.php'          
+        window.location.href = 'booking.php'          
         </script>";
         mysqli_close($conn);
     } else {
         $sql = "INSERT INTO users (name,email,dob,password,phno) VALUES ('$username','$email','$dob','$password','$phno')";
         if(mysqli_query($conn, $sql)){
             echo "<script>alert('Registration successful!')
-            window.location.href = 'login.php'
+            window.location.href = 'booking.php'
             </script>";
         } else {
             echo mysqli_error($conn);
