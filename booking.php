@@ -46,6 +46,7 @@
 							<li class="menu__item"><a href="#gallery" class="menu__link scroll">Gallery</a></li>
 							<li class="menu__item"><a href="#rooms" class="menu__link scroll">Rooms</a></li>
 							<li class="menu__item"><a href="manage-booking.php" class="menu__link scroll">Manage bookings</a></li>
+							<li class="menu__item"><a href="index.php" class="menu__link scroll">logout</a></li>
 						</ul>
 					</nav>
 				</div>
