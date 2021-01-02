@@ -15,6 +15,18 @@
         table, th, td {
             border: 2px solid black;
         }
+        input[type='button']{
+            outline: none;
+            border: 0;
+        }
+        a{
+            color: white;
+        }
+        a:hover{
+            text-decoration: none;
+            outline: none;
+            color: white;
+        }
     </style>
 
 </head>
@@ -73,10 +85,10 @@
                 print"</tr>";
             }
             print"</table>";
-            print "<h3 style='text-align: center;'>Total: ₹. $total_cost</h3><br><br>
+            print "<h3 style='text-align: center;'>Total: ₹ $total_cost</h3><br><br>
             <form id='cancellation-form' style='text-align: center' method='POST' class='container'>
-                <div class='jumbotron' style='background-color: #f76a5c'>
-                <h3>Booking cancellation</h3>
+                <div class='jumbotron' style='background-color: #e24242'>
+                <h3 style= 'color:white'>Booking cancellation</h3>
                 <input type='email' name='email' class='form-control' placeholder='Email ID' ></input><br>
                 <input type='text' name='bid' class='form-control' placeholder='Booking ID' ></input><br>
                 <input type='submit' name='cancel'  class='btn btn-primary btn-sm' value='Cancel'>
@@ -85,12 +97,14 @@
                 </div>
             </form>";
             } else {
-                print "<div class='container'> <h4>No records found for <h4 style='color:red'> '$email'!</h4> </div>";
+                print "<div class='container'> 
+                            <h4>No records found for <h4 style='color:red'> '$email'!</h4> 
+                            <a href='booking.php'><button class='btn btn-success'>Book now</button></a>
+                        </div>";
             }
         } elseif (isset($_POST['cancel'])){
             $book_id = $_POST['bid']; 
             $mail_id = $_POST['email']; 
-            print "<script>alert('$mail_id')</script>";
             mysqli_query($conn, "DELETE FROM bookings WHERE bid = '$book_id' AND email = '$mail_id'");
             $res = mysqli_affected_rows($conn);
             if($res < 1){
@@ -101,8 +115,7 @@
             }
         } elseif (isset($_POST['cancel-all'])){
             $mail_id = $_POST['email'];
-            print "<script>alert($mail_id);</script>";
-            mysqli_query($conn, "DELETE FROM bookings WHERE email = '$mail_id'");
+\            mysqli_query($conn, "DELETE FROM bookings WHERE email = '$mail_id'");
             $result = mysqli_affected_rows($conn);
             if($result < 1){
                 print "<script>alert('No bookings to cancel!')</script>";

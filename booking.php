@@ -249,7 +249,7 @@
 </section>
 <!-- //gallery -->
 	 <!-- rooms & rates -->
-      <div class="plans-section" id="rooms">
+      <div class="plans-section" id="rooms" name='rooms'>
 				 <div class="container">
 				 <h3 class="title-w3-agileits title-black-wthree">Rooms And Rates</h3>
 						<div class="priceing-table-main">
