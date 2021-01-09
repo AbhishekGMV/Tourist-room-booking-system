@@ -17,7 +17,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
     if(mysqli_num_rows($result)){
         echo "<script>alert('User email already exists')
-        window.location.href = 'login.php'          
+        window.location.href = 'index.php'          
         </script>";
         mysqli_close($conn);
     } else {
