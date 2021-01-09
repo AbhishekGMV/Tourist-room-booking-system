@@ -1,3 +1,18 @@
+<style>
+        body  
+        {  
+            margin: 0;  
+            padding: 0; 
+            font-family: 'Arial';  
+            background-image: url('images/login.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            margin-top: 15%;
+        } 
+       
+</style>
+
 <?php
 require_once "config.php";
 

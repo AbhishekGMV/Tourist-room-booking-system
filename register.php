@@ -1,3 +1,18 @@
+<style>
+    body  
+        { 
+            font-family: 'Arial';  
+            background-image: url('images/signup.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            margin-top: 3%;
+
+
+        }        
+</style>
+
+
 <?php
 require_once "config.php";
 
