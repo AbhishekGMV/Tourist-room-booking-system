@@ -35,7 +35,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<h1><a class="navbar-brand" href="booking.php">SUN <span>RISE</span><p class="logo_w3l_agile_caption">Your Dreamy Resort</p></a></h1>
+					<h1><a class="navbar-brand" href="booking.php">HOTEL <span>BOOKING</span><p class="logo_w3l_agile_caption">tourist room booking</p></a></h1>
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
@@ -59,8 +59,8 @@
                 <div class="w3layouts-banner-top w3layouts-banner-top2">
                     <div class="container">
                         <div class="agileits-banner-info">
-                        <h4>SUN RISE</h4>
-                        <h3>want luxurious vacation?</h3>
+                        <h4>TOURIST ROOM BOOKING</h4>
+                        <h3>for easy booking and cancellation of rooms</h3>
                                 <p>Get accommodation today</p>
                             <div class="agileits_w3layouts_more menu__item">
                                     <a href="#features" class="menu__link" data-toggle="modal" data-target="#myModal">Learn More</a>
