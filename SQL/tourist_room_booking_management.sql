@@ -77,7 +77,7 @@ INSERT INTO `users` (`id`, `name`, `email`, `dob`, `password`, `phno`, `create-d
 (6, 'ron', 'ron@mail.com', '2000-12-16', '123', '+91987599901', '2020-12-16'),
 (7, 'parkour', 'parkour@mail.com', '2014-01-16', '123', '+91634569901', '2020-12-16'),
 (8, 'frank', 'frank@mail.com', '2014-02-16', '123', '8797864541', '2020-12-16'),
-(9, 'nick', 'nick@mail.com', '2012-05-16', '123', '8945645612', '2020-12-16')
+(9, 'nick', 'nick@mail.com', '2012-05-16', '123', '8945645612', '2020-12-16');
 
 --
 -- Indexes for dumped tables
